@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Js DOm</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<div id="wrapper" class="wrapper-shadow">
-		<header>
-			<!-- Begin Banner section -->
-			<div id="page-banner">
-				<h1 class="banner-title">Self Taught Learners</h1>
-				<p>Books for GeekWannaBees</p>
-				<form id="search-books">
-					<input type="text" placeholder="search books..."/>
-				</form>
-			</div>
-			<!-- End Banner section -->
-		</header>
-		<!-- Begin section for listing book-->
-		<div id="book-list">
-			<h2 class="book-section-header">Books to Read</h2>
-			<ul>
-				<li>
-					<!-- we use span instead of dive because we want the items inline-->
-					<span class="bookTitle">Javascript101</span>
-					<span class="delete">delete</span>
-				</li>
-				<li>
-					<!-- we use span instead of dive because we want the items inline-->
-					<span class="bookTitle">Javascript102</span>
-					<span class="delete">delete</span>
-				</li>
-				<li>
-					<!-- we use span instead of dive because we want the items inline-->
-					<span class="bookTitle">Javascript103</span>
-					<span class="delete">delete</span>
-				</li>
-				<li>
-					<!-- we use span instead of dive because we want the items inline-->
-					<span class="bookTitle">Javascript104</span>
-					<span class="delete">delete</span>
-				</li>
-			</ul>
-		</div>
-		<!-- End section for listing book-->
-		<!-- Begin section for creating a book-->
-        <form id="add-book">
-        	<input type="text" name="add-book" placeholder="Add a book">
-        	<button>Add</button>
-        </form>
-        <!-- End section for creating a book-->
-	</div>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css"  />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Bookorama</h1>
+          <p>Books for Ninjas</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka on the Shore</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Master and the Margarita</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button>Add</button>
+	    </form>
 
-</body>
+    </div>
+    <script src="main.js"></script>
+  </body>
 </html>
